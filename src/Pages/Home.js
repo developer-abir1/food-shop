@@ -1,11 +1,13 @@
 import React from 'react';
+import Category from '../Component/Category/Category';
+import Delivery from '../Component/Delivery/Delivery';
 import Products from '../Component/Products/Products';
 
 const Home = () => {
     document.title = "Pizza Lover"
     return (
         <>
-            <div className="hero py-16">
+            <div className="hero py-16 ">
                 <div className="container max-auto flex items-center justify-between" >
                     <div className="w-1/2 ">
                         <h6 className="text-lg">Are You Hungry ?</h6>
@@ -20,10 +22,15 @@ const Home = () => {
 
 
 
+            <div className="ss">
+                <Category />
+            </div>
             <div className="eeee">
                 <Products />
             </div>
-
+            <div className="ss">
+                <Delivery />
+            </div>
         </>
     );
 };

@@ -18,6 +18,10 @@ const ProductCard = () => {
 
 
     useEffect(() => {
+
+
+
+        // Cart Itemes
         if (!cart.items) {
             return;
 
@@ -26,7 +30,7 @@ const ProductCard = () => {
         if (priceFetch) {
             return;
         }
-        // console.log('cart', Object.keys(cart.items))
+
 
         fetch('https://star-spark-pasta.glitch.me/api/products/cart-items', {
             method: 'POST',
@@ -41,31 +45,12 @@ const ProductCard = () => {
                 setProducts(data)
                 toggolePriceFetch(true)
             })
-    }, [cart])
+    }, [cart, priceFetch])
 
 
 
 
-    // useEffect(() => {
-    //     if (!cart.items) {
-    //         return;
-    //     }
 
-    //     fetch('https://star-spark-pasta.glitch.me/api/products', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //             ,
-    //         },
-    //         body: JSON.stringify({ ids: Object.keys(cart.items) })
-
-    //     }).then(res => res.json())
-    //         .then(data => {
-    //             setProducts(data)
-    //         })
-
-
-    // }, [cart])
 
 
 

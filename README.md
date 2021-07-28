@@ -26,5 +26,3 @@ Food shop web application user interface  natural.
 7. dotenv
 8. Express JS
 
-
-<button> Nod Js <button>

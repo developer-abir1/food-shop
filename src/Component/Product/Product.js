@@ -37,21 +37,43 @@ const Product = (props) => {
         }, 1000)
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     return (
-        <div className="">
-            <Link to={`/products/${pd._id}`}>
-                <img src={pd.image} className="sm:md-6" alt="pizza" />
-                <div className="text-center">
-                    <h1 className="font-bold my-3">{pd.name}</h1>
-                    <span className="rounded-full bg-gray-200 py-1 px-4 text-sm ">{pd.size}</span>
+
+        <>
+
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full container">
+                <Link to={`/products/${pd._id}`}>
+                    <img alt="ecommerce" class="object-cover object-center w-full  block" src={pd.image} />
+
+                    <div class="mt-4 text-center">
+
+                        <h2 class="text-gray-900 title-font text-lg font-medium">{pd.name}</h2>
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">{pd.size}</h3>
+
+                    </div>
+                </Link>
+                <div className=" flex justify-between items-center mt-4">
+                    <span className="font-bold">${pd.price}</span>
+                    <button disabled={isAdding} onClick={(e) => { addTocarts(e, pd) }} className={`${isAdding ? 'bg-red-500' : 'bg-green-400'} px-4 py-1 rounded-full text-white font-bold hover:bg-green-500`}>ADD{isAdding ? 'ED' : ''} </button>
                 </div>
-            </Link>
-            <div className=" flex justify-between items-center mt-4">
-                <span>${pd.price}</span>
-                <button disabled={isAdding} onClick={(e) => { addTocarts(e, pd) }} className={`${isAdding ? 'bg-red-500' : 'bg-green-400'} px-4 py-1 rounded-full text-white font-bold hover:bg-green-500`}>ADD{isAdding ? 'ED' : ''} </button>
             </div>
 
-        </div>
+
+
+
+        </>
     );
 };
 

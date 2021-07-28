@@ -26,3 +26,7 @@ Food shop web application user interface  natural.
 7. dotenv
 8. Express JS
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0a58fa58909e35482fb3b002de4298c8a9fc908d

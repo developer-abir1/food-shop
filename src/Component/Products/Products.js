@@ -17,14 +17,15 @@ const Products = () => {
 
 
 
-    const showAllProduct = () => {
+    // const showAllProduct = () => {
 
-        const maxProduct = 0;
-        if (products.length === 4) {
-            return maxProduct.toExponential(products)
-        }
+    //     const maxProduct = 0;
+    //     for (let i = 0; i < products.length; i++) {
+    //         let maxResult = 4;
+    //         const element = products[i];
 
-    }
+    //     }
+    // }
 
 
     return (
@@ -42,7 +43,7 @@ const Products = () => {
 
             </div>
 
-            <button onClick={showAllProduct} className="bg-green-500 px-4 py-2 rounded-full landing-none font-bold text-white">Show All Products</button>
+            <button className="bg-green-500 px-4 py-2 rounded-full landing-none font-bold text-white">Show All Products</button>
         </div>
 
     );

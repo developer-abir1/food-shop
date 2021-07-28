@@ -17,10 +17,14 @@ Food shop web application user interface  natural.
 
 
 # Techonology Backend 
-1. Express JS
+1. Node JS
 2. MongoDB
 3. Cors 
 4. Multer (file Upload)
 5. Body perser 
 6. mongoos 
 7. dotenv
+8. Express JS
+
+
+<button> Nod Js <button>
